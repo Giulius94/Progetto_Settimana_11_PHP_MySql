@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php require_once("assets/php/header.php"); require_once("assets/php/navbar.php"); require_once("assets/php/config.php") ?>
+
+
+
+
+<main class="container my-4">
+    <p>test</p>
+</main>
+
+
+<?php require_once("assets/php/footer.php"); ?>
