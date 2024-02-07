@@ -2,9 +2,6 @@
 
 require_once("assets/php/config.php");
 
-// var_dump($_REQUEST);
-
-// Se un utente fa una nuova registrazione
 if ($_REQUEST["mode"] === 'new') {
     // fare i controlli di validazione dei campi
     $regexemail = '/^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/m';
