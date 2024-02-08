@@ -1,6 +1,9 @@
 <?php
 
-session_start();
+// session_start();
+
+//Variabili d'ambiente
+$percorso = '/Progetto_Settimana_11_PHP_MySql';
 
 $config = [
     'mysql_host' => 'localhost',
@@ -41,8 +44,8 @@ if ($my_db->connect_error) {
         id_genere INT NOT NULL,
         created_by_user_id INT NOT NULL,
         img_src VARCHAR(800),
-        FOREIGN KEY (id_autore) REFERENCES autori(id) ON DELETE CASCADE ON UPDATE RESTRICT,
-        FOREIGN KEY (id_genere) REFERENCES generi(id) ON DELETE CASCADE ON UPDATE RESTRICT
+        FOREIGN KEY (id_autore) REFERENCES autori(id) ON DELETE CASCADE ON UPDATE CASCADE,
+        FOREIGN KEY (id_genere) REFERENCES generi(id) ON DELETE CASCADE ON UPDATE CASCADE
         )";
     $creazione_tabella_users = "CREATE TABLE IF NOT EXISTS users(
                                 id INT PRIMARY KEY AUTO_INCREMENT,
