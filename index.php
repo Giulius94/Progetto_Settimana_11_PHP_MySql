@@ -5,6 +5,7 @@
 
 <main class="container my-4">
     <p>test</p>
+    <!-- <?php var_dump($_SESSION); ?> -->
 </main>
 
 

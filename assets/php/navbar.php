@@ -12,7 +12,7 @@ session_start();
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <?php
         if(isset($_SESSION['login'])) {
@@ -21,10 +21,10 @@ session_start();
         </li> <?php
         } else {
            ?> <li class="nav-item">
-          <a class="nav-link" href="/login.php">Log In</a>
+          <a class="nav-link" href="login.php">Log In</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/newuser.php">New Account</a>
+          <a class="nav-link" href="newuser.php">New Account</a>
         </li> <?php
         } 
         
@@ -35,8 +35,8 @@ session_start();
             Manage
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/books.php">Show Books</a></li>
-            <li><a class="dropdown-item" href="/addbook.php">Add Book</a></li>
+            <li><a class="dropdown-item" href="books.php">Your Books</a></li>
+            <li><a class="dropdown-item" href="addbook.php">Add Book</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">My Profile</a></li>
           </ul>
