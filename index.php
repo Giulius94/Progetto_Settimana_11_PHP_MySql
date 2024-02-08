@@ -3,9 +3,8 @@
 
 
 
-<main class="container my-4">
-    <p>test</p>
-    <!-- <?php var_dump($_SESSION); ?> -->
+<main class="container d-flex justify-content-center my-4">
+    <img class="rounded-circle" src="./assets/uploads/bookhouse.jpg" alt="">
 </main>
 
 
