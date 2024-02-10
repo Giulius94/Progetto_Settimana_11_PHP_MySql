@@ -36,11 +36,10 @@ if ($_REQUEST["mode"] === 'new') {
             // print $tutta_dir;
             if (is_uploaded_file($_FILES['fotoFile']["tmp_name"]) && $_FILES['fotoFile']["error"] === UPLOAD_ERR_OK) {
                 if (move_uploaded_file($_FILES['fotoFile']['tmp_name'], $upload_dir)) {
-                    echo "mbare tutto appoggio";
+                    echo "tutto ok";
                 } else {
-                    echo "vez c'è qualcosa che non va ecco tutta DIR:    ";
-                    print_r("   " . $tutta_dir . "    ");
-                    exit("immagine non caricata");
+                    echo "c'è qualcosa che non va";
+                    exit(header('Location: newuser.php'));
                 }
             }
         } else {

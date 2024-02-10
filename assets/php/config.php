@@ -86,9 +86,8 @@ function mysqltoarray($oggetto) {
 
 //funzione per trasformare genere in ID
 function getGenreId($genre) {
-    $genreId = null; // Inizializza a null per gestire il caso di default
-
-    // Usa switch per mappare il genere al suo ID
+    $genreId = null; 
+    
     switch ($genre) {
         case 'fiction':
             $genreId = 1;
@@ -106,11 +105,33 @@ function getGenreId($genre) {
             $genreId = 5;
             break;
         default:
-            // Opzionalmente, gestisci il caso in cui il genere non corrisponde a nessuno dei valori previsti
-            // Per esempio, potresti restituire null o lanciare un'eccezione
+   
             break;
     }
 
     return $genreId;
 }
+
+/* $umberto = "INSERT INTO autori (nome) VALUES ('Umberto Eco')";
+$my_db->query($umberto);
+$Gabriel = "INSERT INTO autori (nome) VALUES ('Gabriel García Márquez')";
+$my_db->query($Gabriel);
+$Tolkien = "INSERT INTO autori (nome) VALUES ('J.R.R. Tolkien')";
+$my_db->query($Tolkien);
+$Orwell = "INSERT INTO autori (nome) VALUES ('George Orwell')";
+$my_db->query($Orwell);
+$Vladimir = "INSERT INTO autori (nome) VALUES ('Vladimir Nabokov')";
+$my_db->query($Vladimir);
+
+
+$books = "INSERT INTO libri (isbn, titolo, anno_pub, id_autore, id_genere, img_src) VALUES
+(9788845292613, 'Il nome della rosa', 1980, 3, 4, 'https://m.media-amazon.com/images/I/61WOxzGgv5L._SL1498_.jpg'),
+(9788804669095, 'Cent'anni di solitudine', 1967, 4, 1, 'https://m.media-amazon.com/images/I/81nxsT-8NWS._SL1500_.jpg'),
+(9780007203543, 'Il Signore degli Anelli', 1954, 5, 3, 'https://m.media-amazon.com/images/I/61PQNxRVagL._SL1354_.jpg'),
+(9780141187761, '1984', 1949, 6, 2, 'https://m.media-amazon.com/images/I/91wTb2PkiHL._SL1500_.jpg'),
+(9780141182537, 'Lolita', 1955, 7, 5, 'https://m.media-amazon.com/images/I/81StK7GTdBL._SL1500_.jpg')";
+
+$my_db->query($books); */
+
+
 
